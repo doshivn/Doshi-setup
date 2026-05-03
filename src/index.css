@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@keyframes ring-shake {
+  0%, 100% { transform: rotate(0deg); }
+  5%, 15%, 25% { transform: rotate(15deg); }
+  10%, 20%, 30% { transform: rotate(-15deg); }
+  35% { transform: rotate(0deg); }
+}
+
+.animate-ring {
+  animation: ring-shake 2.5s ease-in-out infinite;
+}
